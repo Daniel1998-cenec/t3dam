@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio jvs</title>
+    <link rel="stylesheet" href="./estilos20042023.css">
+</head>
+<body>
+<!-- Piramide -->
+  <script>
+    const posicion = parseInt(prompt("Dime un numero de 1-5"));
+    const colorido = prompt("Dime que color quieres(en inglés)");
+
+    let altura = 3;
+    let ancho = 5;
+    var resultado = "";
+
+    for (let z = 0; z < altura; z++) {
+      for (hueco = 0; hueco < 20; hueco++) {
+        resultado+='&nbsp';
+        }
+    for(let h = 0; h < ancho; h++){
+      if(h<=ancho/2-1-z||h>ancho/2+z){
+        resultado+='&nbsp';
+        }else if (h==0 || z ==0 || h==ancho-1){
+        resultado+='*'
+      }else {
+      resultado+='o';
+      }
+  } 
+
+  resultado+='<br/>';
+}
+</script>
+  <section>
+  <div id="n1">
+    <p>1</p>
+      <script>
+        if (posicion==1){
+          let x= document.getElementById("n1");
+          x.style.backgroundColor=colorido;
+          document.write(resultado);
+          }else {
+          document.write("1");
+          }
+      </script>
+</div>
+<div id="n2">
+  <p>2</p>
+    <script>
+      if (posicion==2){
+        let x= document.getElementById("n2");
+        x.style.backgroundColor=colorido;
+        document.write(resultado);
+        }else {
+        document.write("2");
+        }
+      </script>
+</div>
+</section>
+<section id="middle">
+<div id="n3">
+  <p>3</p>
+    <script>
+      if (posicion==3){
+        let x= document.getElementById("n3");
+        x.style.backgroundColor=colorido;
+        document.write(resultado);
+        }else {
+        document.write("3");
+        }
+    </script>
+</div> 
+</section> 
+<section >
+<div id="n4">
+  <p>4</p>
+    <script>
+      if (posicion==4){
+        let x= document.getElementById("n4");
+        x.style.backgroundColor=colorido;
+        document.write(resultado);
+        }else {
+        document.write("4");
+        }
+      </script>
+    </div>
+<div id="n5">
+  <p>5</p>
+    <script>
+      if (posicion==5){
+        let x= document.getElementById("n5");
+        x.style.backgroundColor=colorido;
+        document.write(resultado);
+        }else {
+        document.write("5");
+          }
+        </script>
+    </div>
+</section>
+</body>
+</html>

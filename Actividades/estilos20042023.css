@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    }
+
+section {
+    display:flex;
+    justify-content: space-between;
+}
+
+#middle{
+    justify-content: center;
+}
+
+p{
+    color:white;
+    font-size:xx-large;
+}
+
+div{
+    background-color:antiquewhite;
+    width: 250px;
+    height: 250px;
+}
+
+
+

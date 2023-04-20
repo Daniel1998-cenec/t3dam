@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+</head>
+<body>
+    <h1>Actividades 19 04 2023</h1>
+    <h2>- imprimir el primer numero tantas veces como indique el segundo</h1>
+    <script>
+        let x = parseInt(prompt("ingrese un numero"));
+        let y = parseInt(prompt("ingrese otro número"));
+       
+        for(i=0; i < y; i++) {
+            if (i%8==0){
+                document.write("<br/r>");
+            }
+            document.write(x)
+        }  
+    </script>
+    <h2>-  Imprimir una pirámide a partir de la columna 20, de 3 filas por 5 columnas, usando la letra o.</h1>
+        <script>
+            let altura = 3;
+            let ancho = 5;
+          
+            for (let z = 0; z < altura; z++) {
+                for (hueco = 0; hueco < 20; hueco++) {
+                    document.write('&nbsp');
+                }
+                for(let h = 0; h < ancho; h++){
+                    if(h<=ancho/2-1-z||h>ancho/2+z){
+                        document.write('&nbsp');
+                    }else if (h==0 || z ==0 || h==ancho-1){
+                        document.write('*');
+                    }else {
+                        document.write('o');
+                }
+            } 
+            document.write('<br/>');
+          }
+          </script>
+    </script> 
+</body>
+</html>
