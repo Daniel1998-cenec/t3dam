@@ -1,0 +1,46 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    margin:5vh 5%;
+    background-color:bisque;
+}
+
+nav{
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(220, 220, 220);
+}
+
+.boton{
+    margin: 0.5em 2%;
+    height: 2em;
+    width: 100%;
+    text-align:center;
+    text-decoration: none;
+    padding-top:0,2em;
+    text-shadow:2px 2px black;
+    cursor: pointer;
+    font-size:xx-large;
+    background-color:rgb(128, 128, 128);
+    box-shadow:5px 5px 5px 0px black;
+    border-radius:0.4em;
+    color:rgb(245, 245, 245);
+ }
+ .boton:visited {
+    color:whitesmoke;
+}
+
+@media screen and (max-width:900px){
+    body {
+        background-color:rgb(252, 72, 72) 
+    }
+}
+@media screen and (max-width:600px){
+    body {
+        background-color:rgb(238, 0, 255);
+}
+}
