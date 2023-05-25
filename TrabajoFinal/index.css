@@ -51,7 +51,6 @@ body {
     height: 100vh !important;
     background: url(img/Fondo.png) no-repeat center;
     background-size: cover;
-    background-color: #846386;
 }
 
 .titulo {
@@ -168,13 +167,9 @@ p {
     text-decoration: none;
     cursor: pointer;
   }
-  
-  .container {
-    padding: 2px 16px;
-  }
+
   
   header {
-    background-color: #424042;
     font-size: 25px;
     color: white;
   }
@@ -185,8 +180,7 @@ p {
     color: white;
   }
     
-/*-------------------------------dia y noche ----------------------------------------*/
-
+/*-------------------dia y noche---------------------------------*/
 :root {
   --colorFondo: yellow;
   --colorFuente:green;
@@ -200,33 +194,17 @@ p {
 
 #todo {
   color:var(--colorFuente);
-  /* background-color:yellow; */
   background-color:var(--colorFondo);
 }
 
 #zonaModo {
   position:fixed;
-  top:10px;
-  right:10px;
-  width:var(--anchoIconoModo);
-  background-color:transparent;
+  bottom: 0%;
+  right: 0%;;
+  width: 100px;
 }
 
 #dia, #noche {
-  width:100%;
-  position: absolute;
-  top:0;
-  left:0;
-}
-
-/* se inicializa por JS según valor de variable
-    --modoGuardado
-#dia {
-  display:none;
-}
-*/
-
-mark, span {
-  background-color:var(--colorFondo);
+  width: 100%;
 }
 
