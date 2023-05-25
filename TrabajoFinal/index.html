@@ -10,14 +10,14 @@
 </head>
 
 <body>
-
   <div class="head">
     <nav class="panel">
       <a href="./index.html">Inicio</a>
       <a href="#id01">Modal</a>
       <a href="./pags/JuegoTresEnRaya.html">Juego</a>
-      <a href="https://daniel1998-cenec.github.io/Publico//BluePrintXML/Cuerpo_de_una_mujer/Cuerpo_de_una_mujer.xml">Karaoke</a>
-      <a href="#">Ajuste</a>
+      <a
+        href="https://daniel1998-cenec.github.io/Publico//BluePrintXML/Cuerpo_de_una_mujer/Cuerpo_de_una_mujer.xml">Karaoke</a>
+      <a href="#zonaModo">Ajuste</a>
   </div>
 
   <header class="content header">
@@ -67,6 +67,23 @@
       <img src="./img/Banner 4 728x90.png" height="170px" width="100%" alt="hamburguesa">
     </figure>
   </header>
+  <!-- tomaremos el body como el viewport en el cual se colgará la zona de cambio de Modos -->
+
+  <div id="zonaModo" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <a href="#" class="closebtn">×</a>
+        <img id="noche" src="./img/noche.png" onclick="ponerModoNoche()">
+        <img id="dia" src="./img/dia.png" onclick="ponerModoDia()">
+
+        <!-- Esta zona es donde se visualizan los iconos
+  de cambio de modo (sol y luna).
+  Y queda siempre pegada al viewport, visible -->
+
+      </div>
+    </div>
+  </div>
+  <script src="./dianoche.js"></script>
 </body>
 
 </html>
