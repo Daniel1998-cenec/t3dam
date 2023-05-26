@@ -208,3 +208,25 @@ p {
   width: 100%;
 }
 
+/*-------------------nombrevisible---------------------------------*/
+
+#usuario {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1vw;
+}
+
+#botoncambiarnombre {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

@@ -25,7 +25,7 @@
         <div class="modal-content">
           <header class="container">
             <a href="#" class="closebtn">×</a>
-            <h1>Proyecto final por parte de Daniel Cesar Vargas Holguín || Curso: 1 DAM</br></br></h1> 
+            <h1>Proyecto final por parte de Daniel Cesar Vargas Holguín || Curso: 1 DAM</br></br></h1>
             <p>
               INDICE</br>
               1 - Inicio: Conectara con la pagina de Inicio.</br>
@@ -50,27 +50,29 @@
       <img src="./img/Banner 4 728x90.png" height="170px" width="100%" alt="hamburguesa">
     </figure>
     <h2 class="titulo">Inicio</h2>
-  <p>
-    Te damos la bienvenida a la mejor pagina de Hamburguesa del mundo del famoso streamer "elemperador" con la nueva
-    inaguracion de
-    su restaurante "los pencos". En el cual te encontraras la mejor hamburguesa del mundo, pero !!OJO¡¡
-    !!VAYA HAMBURGUESA¡¡ Aparte, hemos implementando nuevas mejora en la pagina, en la cual tres varios apartado:</br>
-    TODO ESTO DISFRUTANDO LA MEJOR HAMBURGUESA DEL MUNDO VEN Y PASTELO EN GRANDE
-  </p>
+    <p>
+      Te damos la bienvenida a la mejor pagina de Hamburguesa del mundo del famoso streamer "elemperador" con la nueva
+      inaguracion de
+      su restaurante "los pencos". En el cual te encontraras la mejor hamburguesa del mundo, pero !!OJO¡¡
+      !!VAYA HAMBURGUESA¡¡ Aparte, hemos implementando nuevas mejora en la pagina, en la cual tres varios apartado:</br>
+      TODO ESTO DISFRUTANDO LA MEJOR HAMBURGUESA DEL MUNDO VEN Y PASTELO EN GRANDE
+    </p>
   </header>
 
-
+  <input id="userImput" type="text" placeholder="User Name">
+  <button id="botoncambiarnombre" onclick="changeName()">Aceptar</button>
   
-
-  
-  </header>
-
   <div id="zonaModo">
     <img id="dia" src="./img/dia.png" onclick="ponerModoDia()">
     <img id="noche" src="./img/noche.png" onclick="ponerModoNoche()">
   </div>
-  <script src="botondiaynoche.js"></script>
   
+  <div id="usuario">
+    <p id="usuarionombre"></p>
+  </div>
+
+  <script src="nombrevisible.js"></script>
+  <script src="botondiaynoche.js"></script>
 </body>
 
 </html>
