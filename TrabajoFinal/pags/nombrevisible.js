@@ -12,7 +12,7 @@ function storeName() {
 function changeName() {
     var name = document.getElementById('userImput').value;
     if (!name) {
-        document.getElementById('usuarionombre').textContent = "Not Logged in";
+        document.getElementById('usuarionombre').textContent = "sin identificar";
     } else {
         document.getElementById('usuarionombre').textContent = name;
     }
@@ -26,6 +26,6 @@ window.addEventListener('load', function () {
         if (name) {
             document.getElementById('usuarionombre').textContent = name;
         } else {
-            document.getElementById('usuarionombre').textContent = "Not Logged in";
+            document.getElementById('usuarionombre').textContent = "sin identificar";
         }
 });
