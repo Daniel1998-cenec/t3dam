@@ -1,0 +1,179 @@
+/*--DIA Y NOCHE--*/
+:root {
+    --colorFondo: yellow;
+    --colorFuente: green;
+    --colorFuenteDia: black;
+    --colorFondoDia: gainsboro;
+    --colorFuenteNoche: white;
+    --colorFondoNoche: darkgray;
+    --anchoIconoModo: 50px;
+    --modoGuardado: dia;
+}
+
+#todo {
+    color: var(--colorFuente);
+    background-color: var(--colorFondo);
+}
+
+#zonaModo {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    ;
+    width: 100px;
+}
+
+#dia,
+#noche {
+    width: 100%;
+}
+/*-----------------------CAMBIAR NOMBRE-------------------------------------------*/
+#usuario {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 1vw;
+}
+
+#botoncambiarnombre {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*--------------------PANEL--------------------------------*/
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.panel {
+    display: flex;
+    margin-right: 10px;
+}
+
+
+.panel a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.panel a:hover {
+    background: #000000;
+}
+
+#todo {
+    color:var(--colorFuente);
+    background-color:var(--colorFondo);
+  }
+/*---------------------------------MODAL-------------------------------------------------------*/
+
+/* Add animation (Chrome, Safari, Opera) */
+@-webkit-keyframes example {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+  }
+  
+  /* Add animation (Standard syntax) */
+  @keyframes example {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+  }
+  
+  /* The modal's background */
+  .modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Display the modal when targeted */
+  .modal:target {
+    display: table;
+    position: absolute;
+  }
+  
+  /* The modal box */
+  .modal-dialog {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  /* The modal's content */
+  .modal-dialog .modal-content {
+    margin: auto;
+    background-color: #424042;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    border: 1px #777 solid;
+    text-align: justify;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+    /* Add animation */
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 0.5s;
+  }
+  
+  /* The button used to close the modal */
+  .closebtn {
+    text-decoration: none;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .closebtn:hover,
+  .closebtn:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  header {
+    font-size: 25px;
+    color: white;
+  }
+  
+  footer {
+    background-color: #424042;
+    font-size: 20px;
+    color: white;
+  }
+
+  /*------titulo-------*/
+
+  .titulo-llamativo {
+    color: #4b0041; /* Color rojo, puedes cambiarlo al color deseado */
+    font-size: 32px; /* Tamaño de fuente, ajusta según tus preferencias */
+    text-align: center; /* Centra el título */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  }

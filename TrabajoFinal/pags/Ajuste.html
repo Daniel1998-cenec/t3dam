@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ajuste.css" />
+    <title>Ajuste</title>
+</head>
+<body id="todo">
+
+    <div class="head">
+        <nav class="panel">
+          <a href="../index.html">Inicio</a>
+          <a href="#id01">Modal</a>
+          <a href="./JuegoTresEnRaya.html">Juego</a>
+          <a
+            href="https://daniel1998-cenec.github.io/Publico//BluePrintXML/Cuerpo_de_una_mujer/Cuerpo_de_una_mujer.xml">Karaoke</a>
+          <a href="./Ajuste.html">Ajuste</a>
+    </div>
+    <header class="content header">
+        <div id="id01" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <header class="container">
+                <a href="#" class="closebtn">×</a>
+                <h3>Proyecto final por parte de Daniel Cesar Vargas Holguín || Curso: 1 DAM</br></br></h3> 
+                <p>
+                  INDICE</br>
+                  1 - Inicio: Conectara con la pagina de Inicio.</br>
+                  2 - Modal: Explicacion del panel.</br>
+                </p>
+              </header>
+              <div class="container">
+                <p>
+                  3 - Juego: Es el tres en rayas en el cual te podras picarte con tus colegas.</br>
+                </p>
+              </div>
+              <footer class="container">
+                <p>
+                  4 - Karaoke: conectará con la letra del karaoke.(Se encuentra el xml).</br>
+                  5 - Ajuste: Te encontrás con el simbolo de sol o luna que cambia el fondo de color de la pagina</br>
+                  y de introducir un nombre que se vea en todas las esquinas de las pagina.
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    <div id="zonaModo">
+        <img id="dia" src="../img/dia.png" onclick="ponerModoDia()">
+        <img id="noche" src="../img/noche.png" onclick="ponerModoNoche()">
+    </div>
+
+    <h1>Ajuste</h1>
+    <h1 class="titulo-llamativo">Bienvenido a mi pagina de ajuste</h1>
+    <h2> Dime algún nombre que quieres introducir <h2>
+    <input id="userImput" type="text" placeholder="User Name">
+    <button id="botoncambiarnombre" onclick="changeName()">Aceptar</button>
+      
+    <div id="usuario">
+     <p id="usuarionombre"></p>
+    </div>
+
+    <script src="./botondiaynoche.js"></script>
+    <script src="./nombrevisible.js"></script>
+</body>
+</html>
